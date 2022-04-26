@@ -1,6 +1,6 @@
 {% set pypi_name = "marshmallow_dataclass" %}
 {% set conda_name = "marshmallow-dataclass" %}
-{% set version = "8.5.5" %}
+{% set version = "8.5.6" %}
 
 package:
   name: {{ conda_name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.tar.gz
-  sha256: 1f8e914facec8bab8783b954abe1d25090e3871a83ef7098ea9bc19a649de2f9
+  sha256: c3cc4acd5870da336c7230df5cb82ed8e230668769892a6d10a7cc40830d8a79
 
 build:
   noarch: python
