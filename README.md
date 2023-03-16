@@ -1,11 +1,11 @@
-About marshmallow-dataclass
-===========================
+About marshmallow-dataclass-feedstock
+=====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/marshmallow-dataclass-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/lovasoa/marshmallow_dataclass
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/marshmallow-dataclass-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python library to convert dataclasses into marshmallow schemas.
 
