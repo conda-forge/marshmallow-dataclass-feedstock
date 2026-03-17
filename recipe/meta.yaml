@@ -7,27 +7,29 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.tar.gz
   sha256: 4fb80e1bf7b31ce1b192aa87ffadee2cedb3f6f37bb0042f8500b07e6fad59c4
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - dataclasses
     - marshmallow >=3.0.0,<4.0
     - marshmallow-enum
-    - python >=3.6
+    - python >={{ python_min }}
     - typeguard
     - typing_inspect
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - marshmallow_dataclass
 
